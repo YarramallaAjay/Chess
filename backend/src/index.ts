@@ -10,6 +10,7 @@ try{
         ws.send("You are connected!");
         gm.addUser(ws)
         ws.on("disconnected",(data)=>{
+            console.log("disconnected")
          ws.send(`disconnected ${data}`)
         })
      });
